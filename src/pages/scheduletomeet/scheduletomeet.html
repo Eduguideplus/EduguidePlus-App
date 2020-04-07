@@ -1,0 +1,74 @@
+<!--
+  Generated template for the CourseexamdeatilsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Schedule to meet</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <div class="background-sie-cover-all">
+         
+    </div>
+<div class="select-schedule-form">
+   <form  [formGroup]="register" (ngSubmit)="doAction()" >
+    <ion-list>
+      <ion-item>
+        <ion-label>Select Date</ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY" formControlName="schedule_date" [(ngModel)]="schedule_date"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Select Time</ion-label>
+        <ion-select formControlName="schedule_time" [(ngModel)]="schedule_time">
+          <ion-option value="10:00 AM">10:00 AM</ion-option>
+          <ion-option value="10:30 AM">10:30 AM</ion-option>
+          <ion-option value="11:00 AM">11:00 AM</ion-option>
+          <ion-option value="11:30 AM">11:30 AM</ion-option>
+          <ion-option value="12:00 PM">12:00 PM</ion-option>
+          <ion-option value="12:30 PM">12:30 PM</ion-option>
+          <ion-option value="01:00 PM">01:00 PM</ion-option>
+          <ion-option value="01:30 PM">01:30 PM</ion-option>
+          <ion-option value="02:00 PM">02:00 PM</ion-option>
+          <ion-option value="02:30 PM">02:30 PM</ion-option>
+          <ion-option value="02:30 PM">03:00 PM</ion-option>
+          <ion-option value="03:30 PM">03:30 PM</ion-option>
+           <ion-option value="04:00 PM">04:00 PM</ion-option>
+          <ion-option value="04:30 PM">04:30 PM</ion-option>
+           <ion-option value="05:00 PM">05:00 PM</ion-option>
+          <ion-option value="05:30 PM">05:30 PM</ion-option>
+           <ion-option value="06:00 PM">06:00 PM</ion-option>
+        
+         
+         
+        
+        </ion-select>
+      </ion-item>
+      <ion-item>
+      
+      <ion-input type="text" placeholder="Interested Course" formControlName="interested_course" [(ngModel)]="interested_course"></ion-input>
+    </ion-item>
+
+
+
+      </ion-list>
+      <div class="sub-btn-sec">
+        <button ion-button [disabled]="!register.valid">Save</button>
+      </div>
+    </form>
+    </div>
+
+
+
+    
+   
+</ion-row>
+</ion-content>

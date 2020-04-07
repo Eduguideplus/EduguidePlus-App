@@ -1,0 +1,235 @@
+page-courseexamdeatils {
+// header-css-start
+.toolbar-background-md {
+  border-color: #b2b2b2;
+  background: #fff;
+}
+.toolbar-title-md {
+  padding: 0px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #314385;
+
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+  color: #314384;
+
+
+}
+.scroll-content {
+  background: #fff;
+  padding:0px !important;
+}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+
+  background-image: none !important;
+
+  content: "";
+}
+
+// header-css-end
+
+
+
+
+// heard-backgroung-img-start
+.background-sie-cover-all {
+  background: url(../assets/imgs/courses&college.png);
+  height: 215px;
+  background-size: cover;
+  width: 100%;
+  float: left;
+}
+.upper-back-text {
+  position: absolute;
+  top: 35%;
+}
+// heard-backgroung-img-end
+
+
+
+
+
+
+// banner-img
+.banner-img img {
+    height: 110px;
+}
+.banner-img {
+    height: 110px;
+}
+ion-col.banner-section-img.col {
+    background: #fff;
+}
+// banner-img-end
+
+
+
+
+/* Accordion styles */
+.searchbar-search-icon {
+    z-index: 999999 !important;
+    }
+    input.searchbar-input {
+    margin-top: -3px;
+    width: 100%;
+    box-shadow: none !important;
+        padding: 7px 0px !important;
+}
+.searchbar-md {
+    padding: 0px !important;
+ 
+}
+
+.searchbar-search-icon {
+    position: absolute;
+    right: 0px !important;
+    left: auto !important;
+}
+input[type="checkbox"] {
+    opacity: 0;
+}
+input {
+  position: absolute;
+    opacity: 1;
+    z-index: 99999;
+  }
+.tabs {
+
+    overflow: hidden;
+
+  }
+  .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #314384;
+     
+      cursor: pointer;
+      /* Icon */
+      &:hover {
+        background: linear-gradient(198deg, #6b33fa, #ff806d);
+      }
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+      }
+    }
+    &-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #333;
+      background: white;
+      transition: all .35s;
+    }
+    &-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background:linear-gradient(198deg, #6b33fa, #ff806d);
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(198deg, #6b33fa, #ff806d);
+      }
+    }
+  }
+  
+  // :checked
+  input:checked {
+    + .tab-label {
+      background: linear-gradient(198deg, #6b33fa, #ff806d);
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    ~ .tab-content {
+      max-height: 100vh;
+      padding: 0em 1em;
+          
+    }
+  }
+
+  .tab-descrip-p-div-sec p {
+    margin: 6px 0px 0px;
+    text-align: justify;
+    line-height:22px;
+}
+.tab-descrip-p-div-sec h2 {
+    font-size: 1.9rem;
+    margin: 0px;
+    color: #314384;
+}
+
+ .tab-label {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #314384;
+  cursor: pointer;
+  width: 100%;
+  background: linear-gradient(198deg, #ffd28e, #ff806d);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 16px 12px -11px rgba(49, 67, 132, 0.48);
+  margin-bottom: 20px;
+  padding: 17px;
+}
+
+
+
+
+
+
+
+
+
+.tab-descrip-p-div-sec {
+    padding: 5px 10px;
+    height: 300px;
+    overflow: scroll;
+        margin-bottom: 20px;
+}
+
+
+// table-css
+h2 {
+
+  font-size: 2rem;
+  color: #881f41;
+  font-family: PT sans;
+    font-weight: 600;
+  margin-bottom: 15px;
+}
+.all-table-per-sec {
+  border-top: 1px solid #49c6ec;
+  border-left: 1px solid #49c6ec;
+}
+input:checked ~ .tab-content {
+  padding: 0px !important;
+      max-height: 100% !important;
+}
+.all-table-per-sec ion-col.col {
+  border-right: 1px solid #49c6ec;
+  border-bottom: 1px solid #49c6ec;
+}
+ion-col.tab-text-head.col {
+  font-weight: 600;
+  color: #803ee6;
+}
+  .tab-descrip-p-div-sec ul {
+    padding: 0px 10px;
+}
+}

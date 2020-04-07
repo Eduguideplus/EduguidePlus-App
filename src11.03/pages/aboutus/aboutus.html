@@ -1,0 +1,55 @@
+<!--
+  Generated template for the AboutusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="three-tab-menu-p">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      About Us
+    
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <div class="background-sie-cover-all">
+         
+    </div>
+    <!-- <ion-col col-12>
+      <div class="banner-img">
+        <img src="assets/imgs/about-bac.jpg">
+      </div>
+    </ion-col> -->
+    <ion-col col-12>
+    <div class="about-us-content">
+     
+      <h2>{{about_us}}</h2>
+      <p [innerHTML]="about_us_content"></p>
+    </div>
+    <div class="about-us-img-con">
+      <img src="{{about_us_img}}">
+    </div>
+  </ion-col>
+
+  <ion-col col-12>
+    <div class="about-us-content why-us">
+     
+      <h2>{{why_us}}</h2>
+      <p [innerHTML]="why_us_content"></p>
+    </div>
+    <div class="about-us-img-con">
+      <img src="{{why_us_img}}">
+    </div>
+  </ion-col>
+
+
+  </ion-row>
+
+</ion-content>

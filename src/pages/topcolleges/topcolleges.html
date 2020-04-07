@@ -1,0 +1,80 @@
+<!--
+  Generated template for the CourseexamdeatilsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Top Colleges</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <!-- <div class="background-sie-cover-all">
+         
+    </div> -->
+
+
+
+    
+    <ion-col col-12 class="exam-details-all-section">
+
+   
+  <div class="course-all-accordian-sec">
+    
+
+
+  <div class="tabs" *ngIf="collage_list && collage_list.length">
+      <div class="tab" *ngFor="let item of collage_list">
+        <input type="checkbox" id="chck{{item.header_id}}">
+        <label class="tab-label" for="chck{{item.header_id}}">{{item.header}}</label>
+        <div class="tab-content">
+          <div class="all-table-pertic-sec">
+            
+            
+            <div class="all-table-per-sec" *ngIf="item.inst_array && item.inst_array.length">
+              <ion-row>
+               
+            
+                <ion-col col-1 class="tab-text-head">Sl.NO.</ion-col>
+                <ion-col col-4 class="tab-text-head">Name</ion-col>
+                <ion-col col-3 class="tab-text-head">Course</ion-col>
+                
+                <ion-col col-2 class="tab-text-head">Durationa</ion-col>
+                <ion-col col-2 class="tab-text-head">Type</ion-col>
+            
+            </ion-row>
+            <ion-row *ngFor="let res of item.inst_array">
+               
+              <ion-col col-1>{{res.sl_no}}</ion-col>
+              <ion-col col-4>{{res.institute_name}}</ion-col>
+              <ion-col col-3>{{res.exam_name}}</ion-col>
+             
+              <ion-col col-2>{{res.duration}}</ion-col>
+              <ion-col col-2>{{res.type}}</ion-col>
+            
+            </ion-row>
+
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+    
+    
+    </div>
+
+  </div>
+</ion-col>
+</ion-row>
+</ion-content>

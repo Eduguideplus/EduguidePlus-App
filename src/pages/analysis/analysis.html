@@ -1,0 +1,66 @@
+<!--
+  Generated template for the AnalysisPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Analysis for the Test</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="analysis_report && analysis_report.length">
+
+<div class="background-sie-cover-all">
+         
+  </div>
+
+
+<div class="text_box" *ngFor="let item of analysis_report">
+  <ion-row>
+    <ion-col col-12>
+      <div class="heading_q">
+        <h4><span>Q {{item.qno}}.</span> <p [innerHTML]="item.question"></p></h4>
+      </div>
+      <div class="text_b">
+        <p>Right Answer :</p><p [innerHTML]="item.corrected_answer"></p>
+        <p class="right_ans" *ngIf="item.answer=='true'">Your Answer :</p>
+        <p class="wrong_ans" *ngIf="item.answer=='false'">Your Answer :</p>
+        <p [innerHTML]="item.attempted_answer"></p>
+        <p>Explanation  :</p><p [innerHTML]="item.explanation"></p>
+      </div>
+    </ion-col>
+  </ion-row>
+</div>
+
+
+<!-- <div class="text_box">
+  <ion-row>
+    <ion-col col-12>
+      <div class="heading_q">
+        <h4><span>Q 2.</span> In a series LCR circuit, different physical quantities vary with frequency w. Which of the following curves represent correct frequency variation of the corresponding quantity ?</h4>
+      </div>
+      <div class="text_b">
+        <p>Right Answer :<span> Curve III for `X_(L)`</span></p>
+        <p class="wrong_ans">Your Answer :<span> Curve II for Current I</span></p>
+        <p>Explanation  :<span> Option (C):Curve III for `X_(L)`,Option (A):Curve I for R,</span></p>
+      </div>
+    </ion-col>
+  </ion-row>
+</div>
+ -->
+
+
+
+
+
+
+
+<div class="button_sec">
+  <button ion-button (click)="gotoHomePage()">Home</button>
+</div>
+
+  
+
+</ion-content>

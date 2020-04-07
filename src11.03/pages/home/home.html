@@ -1,0 +1,176 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <div  class="logo">
+      <img src="assets/imgs/logo.png">
+    </div>
+    <div class="notification">
+      <img src="assets/imgs/notification.png">
+      <div class="noti-number">
+        <span class="span-noti-number">0</span>
+      </div>
+    </div>
+    </ion-title>
+  </ion-navbar>
+  <!-- <div class="search-box">
+    <div class="input-div">
+    <ion-input type="text" placeholder="Search"></ion-input>
+    <div class="search-icon">
+      <img src="assets/imgs/search.png">
+
+    </div>
+  </div>
+  </div> -->
+</ion-header>
+
+<ion-content padding>
+  <ion-slides *ngIf="home_slider && home_slider.length" autoplay="2000" loop="true" speed="500" pager="true" >
+
+    <ion-slide  *ngFor="let item of home_slider" >
+    <img src="{{item.images}}">
+    <div class="slider-cont">
+      <h2>{{item.title_1}}</h2>
+      <p>{{item.title_2}}</p>
+    </div>
+    </ion-slide>
+
+
+  </ion-slides>
+  <div class="welcome-sec" *ngIf="welcome_content && welcome_content.length">
+    <ion-row>
+      <ion-col col-12>
+        <div class="wel-bac-color">
+        <h2>{{welcome_content[0].title}}</h2>
+        <p [innerHTML]="welcome_content[0].content"></p>
+</div>
+      </ion-col>
+    </ion-row>
+  </div>
+<div class="career-guide-section">
+  <ion-row>
+    <ion-col col-6>
+        <div class="career_guide_box first-p" (click)="gotoCourselist()">
+            <div class="career_icon">
+              <img src="assets/imgs/course-college.png" alt="icon1">
+            </div>
+            <div class="career_cont">
+              <h3>Course &amp; Colleges</h3>
+            </div>
+          </div>
+    </ion-col>
+    <ion-col col-6>
+        <div class="career_guide_box second-p" (click)="gotoExamlist()">
+            <div class="career_icon">
+              <img src="assets/imgs/online-exam.png" alt="icon1">
+            </div>
+            <div class="career_cont">
+              <h3>Online Exam</h3>
+            </div>
+          </div>
+    </ion-col>
+    <ion-col col-6>
+        <div class="career_guide_box third-p" (click)="gotoStudyabroad()">
+            <div class="career_icon">
+              <img src="assets/imgs/study-abroad.png" alt="icon1">
+            </div>
+            <div class="career_cont">
+              <h3>Study Abroad</h3>
+            </div>
+          </div>
+    </ion-col>
+    <ion-col col-6>
+        <div class="career_guide_box fourth-p" (click)="gotoVideotutoriallist()">
+            <div class="career_icon">
+              <img src="assets/imgs/videotu.png" alt="icon1">
+            </div>
+            <div class="career_cont">
+              <h3>Video Tutorials</h3>
+            </div>
+          </div>
+    </ion-col>
+  </ion-row>
+</div>
+
+
+<ion-row>
+  <ion-col col-12>
+
+
+
+
+<div class="our-expertise-heading">
+  <h2>Latest News & Notice</h2>
+  </div>
+
+  <div class="find-your-expertise" *ngIf="news_notice_list && news_notice_list.length">
+
+    <div class="scrol-sec-rex">
+        <div class="marquee">
+            <div class="img1" *ngFor="let itemnews of news_notice_list">
+              <div class="num-mar">{{itemnews.sl}}</div>
+              <div class="text-mar"><p [innerHTML]="itemnews.description"></p>
+              <span class="blink" *ngIf="itemnews.is_new=='Yes'">New</span><button *ngIf="itemnews.image" (click)="download_notice(itemnews.image)">Download File</button>
+            </div>
+            </div>
+
+            </div>
+          </div>
+  </div>
+
+  <div class="our-expertise-heading">
+    <h2>Latest Events</h2>
+    </div>
+
+    <div class="find-your-expertise" *ngIf="eventList && eventList.length">
+
+      <div class="scrol-sec-rex" >
+          <div class="marquee">
+              <div class="img1" *ngFor="let itemevent of eventList">
+                <div class="num-mar">{{itemevent.sl}}</div>
+                <div class="text-mar"><p [innerHTML]="itemevent.description"></p>
+                <span class="blink" *ngIf="itemevent.is_new=='Yes'">New</span><button (click)="download_event(itemevent.image)" *ngIf="itemevent.image">Download File</button>
+              </div>
+              </div>
+
+
+              </div>
+            </div>
+    </div>
+
+
+    <div class="our-expertise-heading">
+        <h2>Our Experts</h2>
+        </div>
+        <ion-slides *ngIf="our_experties_list && our_experties_list.length" autoplay="2000" loop="true" speed="500" pager="true">
+
+            <ion-slide *ngFor="let item of our_experties_list" >
+                <div class="expertise-all-sec">
+                    <div class="expertise-content">
+                      <p [innerHTML]="item.content"></p>
+                    </div>
+                    <div class="expert-img">
+                      <img src="{{item.images}}">
+                    </div>
+                    <div class="expert-name">
+                      <h4>{{item.name}}</h4>
+                      <p>{{item.designation}}</p>
+                    </div>
+                  </div>
+            </ion-slide>
+
+
+
+          </ion-slides>
+
+
+
+
+
+
+</ion-col>
+</ion-row>
+
+</ion-content>

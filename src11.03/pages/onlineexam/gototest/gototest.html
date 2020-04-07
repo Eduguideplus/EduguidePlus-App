@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{exam_details.exam_name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="background-sie-cover-all">
+         
+  </div>
+
+    <ion-row>
+        <ion-col col-12>
+          <div class="full-banner-header-sec">
+          <!-- <div class="banner-img">
+            <img src="assets/imgs/exam/online-exam.jpg">
+          </div> -->
+          <div class="test-name-sec">
+            <h2>{{exam_details.exam_name}}</h2>
+          </div>
+        </div>
+        </ion-col>
+        <ion-col col-12 *ngIf="subject_test_list && subject_test_list.length">
+          <div class="per-test-area-sec" *ngFor="let item of subject_test_list">
+           
+            <div class="only-test-sec" *ngIf="item.istest=='1'">
+               <h2>{{item.section_name}}</h2>
+              <div class="test-series-per" *ngFor="let res of item.test_array" (click)="gotoExaminstruction(res)">
+                <p>{{res.set_name}}</p>
+              </div>
+              
+            </div>
+
+            <div class="only-test-sec" *ngIf="item.istest=='0'">
+               <h2>{{item.section_name}}</h2>
+              <div>
+                <p>Currently no test available</p>
+              </div>
+              
+            </div>
+          </div>
+
+          
+
+         
+        </ion-col>
+        </ion-row>
+        
+        </ion-content>

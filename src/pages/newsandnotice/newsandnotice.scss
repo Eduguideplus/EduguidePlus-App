@@ -1,0 +1,124 @@
+page-newsandnotice {
+   // header-css-start
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #fff;
+  }
+  .toolbar-title-md {
+    padding: 0px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #314385;
+  
+  }
+  .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #314384;
+  
+  
+  }
+  .scroll-content {
+    background: #fff;
+    padding:0px !important;
+  }
+  .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  
+    background-image: none !important;
+  
+    content: "";
+  }
+  
+  // header-css-end
+  
+  
+  
+  // heard-backgroung-img-start
+  .background-sie-cover-all {
+    background: url(../assets/imgs/app2.png);
+    height: 145px;
+    background-size: cover;
+  }
+  .upper-back-text {
+    position: absolute;
+    top: 35%;
+  }
+  // heard-backgroung-img-end
+  
+  // banner-img
+  .banner-img img {
+    height: 110px;
+    width: 100%;
+  }
+  .banner-img {
+    height: 110px;
+  }
+  // banner-img-end
+  
+  
+  
+  .marquee{
+    display:block;
+  position:relative;
+  width:100%;
+  height:160px;
+  animation:scroll 20s linear infinite;
+  padding:3px;
+  }
+  
+  .marquee:hover {
+      animation-play-state: paused
+  }
+  
+  .img1 {
+  
+    margin: 15px 3px 3px 3px;
+ 
+  }
+  
+  /* Make it move */
+  @keyframes scroll{
+  0% {top:200px;}
+  100% {top:-100%;}
+  }
+  .scrol-sec-rex {
+    height: 350px;
+    overflow: hidden;
+}
+
+
+.num-mar {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(to left, #8c3fff, #5c72ff);
+    border-radius: 39px;
+
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 10px;
+}
+.text-mar {
+  font-size: 1.5rem;
+  line-height: 20px;
+  display: table;
+}
+.blink {
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+  background: red;
+  border: 1px solid red;
+  color: #fff;
+  padding: 0px 15px;
+  border-radius: 20px;
+  margin-left: 5px;
+  box-shadow: 0px 0px 10px 2px red;
+  font-size: 12px;
+}
+
+
+}

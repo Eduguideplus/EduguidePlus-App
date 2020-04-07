@@ -1,0 +1,73 @@
+<!--
+  Generated template for the UserdashboardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>User Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <div class="background-sie-cover-all">
+
+  </div> -->
+
+  <div class="name-img-sec">
+    <ion-row>
+      <ion-col col-7>
+        <h2>{{name}}</h2>
+      </ion-col>
+      <!-- <ion-col col-5>
+        <div class="profile-img-sec-center">
+        <div class="profile-img-sec">
+          <img src="https://www.eduguideplus.com/assets/uploads/student_pic/{{profilr_pid}}">
+          <div class="edit-icon" (click)="get_image()">
+            <img src="assets/imgs/edit.png">
+          </div>
+        </div>
+        </div>
+      </ion-col> -->
+    </ion-row>
+  </div>
+
+
+  <!-- <div class="profile-completion-sec">
+    <ion-row>
+      <ion-col col-12>
+    <h2>Profile Completion<span class="completion-percent">100%</span></h2>
+  </ion-col>
+  </ion-row>
+  </div> -->
+
+  <div class="profile-details-all-sec">
+    <!-- <h2>Profile Details<span class="pen-pro-de"><img src="assets/imgs/edit.png" (click)="gotoEditprofile()"></span></h2> -->
+    <h2>Profile Details</h2>
+    <div class="per-section-profile">
+    <h3><img src="assets/imgs/dash-user.png"><span class="dis-tab">{{name}}</span></h3>
+    </div>
+
+    <div class="per-section-profile">
+      <h3><img src="assets/imgs/dash-email.png"><span class="dis-tab">{{email}}</span></h3>
+      </div>
+      <div class="per-section-profile">
+        <h3><img src="assets/imgs/dash-call.png"><span class="dis-tab">{{mobile}}</span></h3>
+        </div>
+
+
+      <div class="per-section-profile">
+        <h3><img src="assets/imgs/dash-gender.png"><span class="dis-tab">{{gender}}</span></h3>
+        </div>
+
+        <div class="per-section-profile">
+          <h3><img src="assets/imgs/dash-location.png"><span class="dis-tab">{{address}}</span></h3>
+          </div>
+
+          <div class="per-section-profile">
+            <h3><img src="assets/imgs/dash-date.png"><span class="dis-tab">{{dob}}</span></h3>
+            </div>
+  </div>
+
+</ion-content>

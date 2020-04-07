@@ -1,0 +1,93 @@
+page-analysis {
+
+    .toolbar-title-md {
+        padding: 0px;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #002f89;
+    }
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+        color: #002f89;
+    }
+    .toolbar-background-md {
+        border-color: #fff;
+        background: #fff;
+    }
+
+    // .scroll-content {
+    //     padding: 0px !important;
+    // }
+
+
+    .text_box {
+        width: 100%;
+        float: left;
+        padding: 6px;
+        margin-top: 20px;
+        background: #ffffff0d;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px 0px #002f89;
+    }
+    .heading_q h4 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 20px;
+    }
+    .heading_q {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    .text_b {
+        width: 100%;
+        float: left;
+    }
+    .text_b p {
+        margin: 0px;
+        padding: 5px 0;
+        line-height: 24px;
+    }
+    .text_b p span {
+        font-weight: 500;
+    }
+    .right_ans {
+        background: #03c822;
+    }
+    .wrong_ans{
+        background: #f00;
+    }
+
+
+    .button_sec {
+        width: 100%;
+        float: left;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .button_sec button {
+        background: #002f89;
+        border: 1px solid #002f89;
+        border-radius: 4px;
+        padding: 20px 30px;
+    }
+    .button-md:hover:not(.disable-hover) {
+        background-color: #002f89;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,73 @@
+<!--
+  Generated template for the CourselistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{course_name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="course_exam_list && course_exam_list.length">
+    <!-- <ion-row>
+        <ion-col col-12>
+          <div class="banner-img">
+            <img src="assets/imgs/exam/online-exam.jpg">
+          </div>
+        </ion-col>
+        </ion-row> -->
+        <div class="background-sie-cover-all">
+         
+        </div>
+        
+
+ <!-- <ion-row>
+   <ion-col col-12>
+
+
+ <div class="choose-your-exam">
+  <h2>State Level Exam</h2>
+</div>
+</ion-col>
+</ion-row> -->
+
+    <div class="career-guide-section" *ngFor="let item of course_exam_list">
+        <ion-row *ngIf="item.is_exam=='Y'">
+         <ion-col col-12>
+
+
+        <div class="choose-your-exam">
+          <h2>{{item.level_name}}</h2>
+          </div>
+          </ion-col>
+          <ion-col col-12 *ngFor="let res of item.exams">
+              <div class="career_guide_box" (click)="gotoCourseexamdeatils(res.exam_id)">
+                  
+                  <div class="career_cont">
+                    <h3>{{res.exam_name}}<ion-icon name="arrow-forward"></ion-icon>
+                    </h3>
+                  </div>
+                </div>
+          </ion-col>
+
+          
+
+       
+
+
+  </ion-row>
+      </div>
+
+
+
+
+
+
+
+
+
+    
+
+</ion-content>

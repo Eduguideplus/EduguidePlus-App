@@ -1,0 +1,90 @@
+page-examinstruction {
+// header-css-start
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #fff;
+}
+.toolbar-title-md {
+    padding: 0px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #314385;
+
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #314384;
+
+
+}
+.scroll-content {
+    background: #fff;
+    padding:0px !important;
+}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  
+    background-image: none !important;
+
+    content: "";
+}
+
+// header-css-end
+
+// heard-backgroung-img-start
+.background-sie-cover-all {
+    background: url(../assets/imgs/online-examn.png);
+    height: 160px;
+    background-size: cover;
+}
+.upper-back-text {
+    position: absolute;
+    top: 35%;
+}
+// heard-backgroung-img-end
+.exam-instruction h2 {
+    margin: 0px;
+    font-size: 2rem;
+    color: #8a42ff;
+}
+.exam-instruction p {
+    margin: 0px 0px 7px 0px;
+}
+.only-question {
+    width: 100%;
+    float: left;
+    margin: 20px 0px;
+}
+.question-icon {
+    width: 40px;
+    float: left;
+}
+.question-text {
+    width: calc(100% - 55px);
+    float: right;
+}
+.all-instruction-sec h2 {
+    margin-bottom: 20px !important;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.per-instruction-area .instruction-icon {
+    width: 35px;
+    float: left;
+}
+.per-instruction-area {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.instruction-content {
+    width: calc(100% - 46px);
+    float: right;
+}
+button.disable-hover.button.button-md.button-default.button-default-md {
+    background: -webkit-gradient(linear, right top, left top, from(#8c3fff), to(#5c72ff));
+    background: linear-gradient(to left, #8c3fff, #5c72ff);
+    width: 100%;
+    border-radius: 50px;
+    height: 47px;
+}
+
+}

@@ -1,0 +1,69 @@
+page-videotutorialcategory {
+// header-css-start
+.toolbar-background-md {
+   border-color: #b2b2b2;
+   background: #fff;
+}
+.toolbar-title-md {
+   padding: 0px;
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: #314385;
+
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+   color: #314384;
+
+
+}
+.scroll-content {
+   background: #fff;
+   padding:0px !important;
+}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+ 
+   background-image: none !important;
+
+   content: "";
+}
+
+// header-css-end
+
+
+
+// heard-backgroung-img-start
+.background-sie-cover-all {
+   background: url(../assets/imgs/video-tutorial.png);
+   height: 190px;
+   background-size: cover;
+}
+.upper-back-text {
+   position: absolute;
+   top: 35%;
+}
+// heard-backgroung-img-end
+
+// banner-img
+.banner-img img {
+   height: 110px;
+   width: 100%;
+}
+.banner-img {
+   height: 110px;
+}
+// banner-img-end
+
+iframe {
+    width: 100%;
+}
+.video_yt h4 {
+    margin: 0px;
+    background: #314384;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    margin-top: -4px;
+}
+
+}

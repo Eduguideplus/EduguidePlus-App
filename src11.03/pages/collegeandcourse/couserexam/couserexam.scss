@@ -1,0 +1,134 @@
+page-couserexam {
+ // header-css-start
+ .toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #fff;
+}
+.toolbar-title-md {
+    padding: 0px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #314385;
+
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #314384;
+
+
+}
+.scroll-content {
+    background: #fff;
+    padding:0px !important;
+}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  
+    background-image: none !important;
+
+    content: "";
+}
+
+// header-css-end
+
+
+
+
+// heard-backgroung-img-start
+.background-sie-cover-all {
+    background: url(../assets/imgs/app2.png);
+    height: 215px;
+    background-size: cover;
+}
+.upper-back-text {
+    position: absolute;
+    top: 35%;
+}
+// heard-backgroung-img-end
+// banner-img
+.banner-img img {
+    height: 110px;
+}
+.banner-img {
+    height: 110px;
+}
+// banner-img-end
+
+
+
+// career-guide-sec-start
+.career_guide_box {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    background: linear-gradient(198deg,#ffd28e,#ff806d);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 16px 12px -11px rgba(49, 67, 132, 0.48);
+    margin-bottom: 5px;
+}
+.career_icon {
+    width: 65px;
+    float: left;
+}
+
+.career_cont h3 {
+    line-height: 31px;
+    margin: 0px;
+    color: #FFF !important;
+    float: right;
+    text-align: left;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-left: 15px;
+    padding: 10px;
+}
+.career-guide-section {
+    padding: 5px;
+    margin-top: 10px;
+}
+// career-guide-sec-end
+.how-to-start-exam ion-icon {
+    float: right;
+}
+.how-to-start-exam {
+    background: linear-gradient(198deg, #3143847a, #314384 61.71%);
+    padding: 10px;
+    border-radius: 4px;
+}
+.how-to-start-exam h2 {
+    font-size: 1.6rem;
+    margin: 0px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.choose-your-exam h2 {
+    margin: 0px;
+    font-size: 2.7rem;
+    color: #881f41;
+    font-family: PT sans;
+    font-weight: 600;
+}
+.our-partner-sec h2 {
+    font-size: 1.8rem;
+    margin: 0px;
+}
+.our-partner-sec {
+    padding: 5px;
+}
+.career_cont ion-icon {
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+   
+    color: #314384;
+    margin-right: 15px;
+}
+.choose-your-exam {
+    padding-left: 10px;
+}
+
+}

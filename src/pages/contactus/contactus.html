@@ -1,0 +1,115 @@
+<ion-header class="three-tab-menu-p">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+     Contact Us
+    
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+ <!--  <div class="background-sie-cover-all">
+         
+  </div> -->
+<div class="all-contact-us-page">
+  <div class="address-with-banner">
+    <div class="img-sec">
+<img src="assets/imgs/jee-main.jpg">
+    </div>
+    <div class="contact-us-content">
+      <div class="per-section-con">
+        <div class="img-con">
+          <img src="assets/imgs/conhome.png">
+        </div>
+        <div class="con-text">
+        <p>{{address}}</p>
+        </div>
+      </div>
+
+      <div class="per-section-con">
+        <div class="img-con">
+          <img src="assets/imgs/con-call.png">
+        </div>
+        <div class="con-text">
+          <p>{{contact_number}}</p>
+        </div>
+      </div>
+
+      <div class="per-section-con">
+        <div class="img-con">
+          <img src="assets/imgs/con-email.png">
+        </div>
+        <div class="con-text">
+          <p>{{contact_email}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="social-icon-class">
+    <ion-row>
+      <ion-col col-3 (click)="facebook_Fn()">
+        <div class="social-img">
+          <img src="assets/imgs/facebook.png">
+        </div>
+      </ion-col>
+
+      <ion-col col-3 (click)="twitter_Fn()">
+        <div class="social-img">
+          <img src="assets/imgs/twitter.png">
+        </div>
+      </ion-col>
+
+      <ion-col col-3 (click)="linkedin_Fn()">
+        <div class="social-img">
+          <img src="assets/imgs/linkedin.png">
+        </div>
+      </ion-col>
+
+      <ion-col col-3 (click)="youtube_Fn()">
+        <div class="social-img">
+          <img src="assets/imgs/youtube.png">
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="contac-form-all">
+    <form [formGroup]="contact_us" (ngSubmit)="contactUs()" >
+      <ion-col col-12>
+        <label>Name:</label>
+        <ion-input type="text" [(ngModel)]="name" formControlName="name" placeholder="Enter Your Name"></ion-input>
+      </ion-col>
+
+      <ion-col col-12>
+        <label>Phone Number:</label>
+        <ion-input type="number" [(ngModel)]="mobile_number" formControlName="mobile_number" placeholder="Enter Your Phone Number" ></ion-input>
+      </ion-col>
+
+      <ion-col col-12>
+        <label>Email Id:</label>
+        <ion-input type="text" [(ngModel)]="email_id" formControlName="email_id" placeholder="Enter Your Email Id"></ion-input>
+      </ion-col>
+
+      <ion-col col-12>
+        <label>Subject:</label>
+        <ion-input type="text" [(ngModel)]="subject" formControlName="subject" placeholder="Type your subject"></ion-input>
+      </ion-col>
+
+
+      <ion-col col-12>
+        <label>Massage:</label>
+        <ion-input type="text" [(ngModel)]="message" formControlName="message" placeholder="Type your massage"></ion-input>
+      </ion-col>
+      <ion-col col-12>
+        <button ion-button type="submit" [disabled]="!contact_us.valid" class="send-btn">Submit</button>
+      </ion-col>
+    </form>
+  </div>
+</div>
+</ion-content>
+

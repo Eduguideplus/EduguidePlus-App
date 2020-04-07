@@ -1,0 +1,100 @@
+<!--
+  Generated template for the ExaminstructionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Instruction    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="background-sie-cover-all">
+         
+  </div>
+
+  <div class="exam-instruction">
+    <ion-row>
+      <ion-col col-12>
+        <p>{{examtypename}} ({{subjectname}})</p>
+        <h2>{{set_name}}</h2>
+        <div class="question-and-time-sec">
+          <ion-row>
+            <ion-col col-6>
+              <div class="only-question">
+                <div class="question-icon">
+                  <img src="assets/imgs/question.png">
+                </div>
+                <div class="question-text">
+                  <h2>{{total_question}}</h2>
+                  <p>Question</p>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col col-6>
+              <div class="only-question">
+                <div class="question-icon">
+                  <img src="assets/imgs/clock.png">
+                </div>
+                <div class="question-text">
+                  <h2>{{exam_duration}}</h2>
+                  <p>Seconds</p>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="all-instruction-sec">
+          <h2>Instruction</h2>
+          <div class="per-instruction-area">
+            <div class="instruction-icon">
+              <img src="assets/imgs/instruction.png">
+            </div>
+            <div class="instruction-content">
+              <p>1. Positive marks is awarded for correct attempts and Negative marks for incorrect attempts.</p>
+            </div>
+          </div>
+
+          <div class="per-instruction-area">
+            <div class="instruction-icon">
+              <img src="assets/imgs/instruction.png">
+            </div>
+            <div class="instruction-content">
+              <p>2. Tap on options to select the correct answer.</p>
+            </div>
+          </div>
+
+          <div class="per-instruction-area">
+            <div class="instruction-icon">
+              <img src="assets/imgs/instruction.png">
+            </div>
+            <div class="instruction-content">
+              <p>3. Tap on the Next Button to save & get next questions.</p>
+            </div>
+          </div>
+
+          <div class="per-instruction-area">
+            <div class="instruction-icon">
+              <img src="assets/imgs/instruction.png">
+            </div>
+            <div class="instruction-content">
+              <p>4. By clicking 'START EXAM' button your Exam will be started .</p>
+            </div>
+          </div>
+         
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="start-exam-btn">
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button (click)="gotoQuestions()">START EXAM</button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
+

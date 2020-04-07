@@ -1,0 +1,119 @@
+<ion-menu [content]="content" type="overlay" id="Homescreehmenu" >
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <div class="left-menu-alltab-my-ccount-section">
+          <div class="left-menu-images-section">
+            <img src="assets/imgs/person.jpg">
+          </div>
+          <div class="left-menu-my-account" (click)="goTologin()" menuClose *ngIf="isActive" >
+            <h2>Login/Sign Up  <ion-icon name="arrow-forward"></ion-icon>
+            </h2>
+          </div>
+          <div class="left-menu-my-account"  menuClose *ngIf="isInActive" >
+          <h2>{{user_name}}<ion-icon name="arrow-forward"></ion-icon>
+            </h2>
+          </div>
+        </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="left-menu">
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+        <div class="icon-p-cus"><img [src]="p.icon"></div>
+      </button>
+    </ion-list>
+  </ion-content>
+  <ion-footer class="left-menu-soacial-p-cus">
+    <ion-row>
+      <ion-col col-12>
+        <div class="social-img">
+          <img src="assets/imgs/tab_facebook.png">
+        </div>
+        <div class="social-img">
+          <img src="assets/imgs/tab_twitter.png">
+        </div>
+        <div class="social-img">
+          <img src="assets/imgs/tab_linkedin.png">
+        </div>
+        <div class="social-img">
+          <img src="assets/imgs/tab_youtube.png">
+        </div>
+      </ion-col>
+
+      
+    </ion-row>
+  </ion-footer>
+
+</ion-menu>
+<ion-menu [content]="content" type="overlay" id="loginmenu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <div class="left-menu-alltab-my-ccount-section">
+          <div class="left-menu-images-section">
+            <img src="{{profile_photo}}">
+          </div>
+          <div class="left-menu-my-account" (click)="goTologin()" menuClose *ngIf="isActive" >
+            <h2>Login/Sign Up  <ion-icon name="arrow-forward"></ion-icon>
+            </h2>
+          </div>
+          <div class="left-menu-my-account"  menuClose *ngIf="isInActive" >
+          <h2>{{user_name}}<ion-icon name="arrow-forward"></ion-icon>
+            </h2>
+          </div>
+        </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="left-menu">
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages1" (click)="openPage(p)">
+        {{p.title}}
+        <div class="icon-p-cus"><img [src]="p.icon"></div>
+      </button>
+    </ion-list>
+  </ion-content>
+  <ion-footer class="left-menu-soacial-p-cus">
+    <ion-row>
+      <ion-col col-12>
+        <div class="social-img">
+          <img src="assets/imgs/tab_facebook.png">
+        </div>
+        <div class="social-img">
+          <img src="assets/imgs/tab_twitter.png">
+        </div>
+        <div class="social-img">
+          <img src="assets/imgs/tab_linkedin.png">
+        </div>
+        <div class="social-img">
+          <img src="assets/imgs/tab_youtube.png">
+        </div>
+      </ion-col>
+
+      
+    </ion-row>
+  </ion-footer>
+
+</ion-menu>
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+  .ion-col
+ -->
+
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
